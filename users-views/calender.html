@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smart Hub</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/holiday.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Smart Hub</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="../users-views/leaveT.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Leave Tracker</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link" href="../users-views/profile.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Profile</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../users-views/calender.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Calender
+                    </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../users-views/leaveT.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Leave Tracker</span></a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Logout</span></a>
+            </li>
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+          
+
+         
+
+            <!-- Nav Item - Charts -->
+          
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60"
+                                            alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been
+                                            having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60"
+                                            alt="">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them
+                                            sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60"
+                                            alt="">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so
+                                            far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people
+                                            say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                                <img class="img-profile rounded-circle"
+                                    src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                   
+                    <!-- Content Row -->
+                    <div class="row">
+                            <main class="calendar-contain">
+
+                                    <section class="title-bar">
+                                        <button class="title-bar__burger">
+                                            <span class="burger__lines">Toggle Menu</span>
+                                        </button>
+                                        <span class="title-bar__year">
+                                            Calendar > May 2017
+                                        </span>
+                                        <span class="title-bar__month">
+                                            Month
+                                        </span>
+                                        <div class="title-bar__controls">
+                                            <div class="title-bar__minimize"></div>
+                                            <div class="title-bar__maximize"></div>
+                                            <div class="title-bar__close"></div>
+                                        </div>
+                                    </section>
+        
+                                    <aside class="calendar__sidebar">
+                                        <div class="sidebar__nav">
+                                            <!-- Icons by Icons8 -->
+                                            <span class="sidebar__nav-item"><img class="icon icons8-Plus-Math" width="22px"
+                                                    height="22px"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAWUlEQVRYR+2WMQoAIAgA9f+PrsWmEMQSEa7Z8rzEUmle2pxfABhvYFkPpQtJb7TEAGAAAxgoM3AO/v1YXoPPm4TtANHKy64AAAxgAANjDERB3bjXXzEA8w1s3k4WIU0YaEoAAAAASUVORK5CYII="></span>
+                                            <span class="sidebar__nav-item"><img class="icon icons8-Share" width="22px"
+                                                    height="22px"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAB+klEQVRYR+2W0VEdMQxFDxUQKoBUkFABUAFQAaGDUEFCBQkVABUAFRAqgFRAUgFQQTJnxprx2/V67f3h5+nnzfNK8vXVteQN3tk23nl/1gCWMrAD/AD2UwlvgTPgtbekSwB8AJ4Bf3Nz84+9IJYAuAJOgAfgKGNgD7gGvvSwsATAH2Ab2MpOKxsvgN9kodl6AHha6279tRyAa5ZFE4R6UBez1gogaM8T/gKO08JNJsjw+ZmAVEG0AMg3Pwf8/wRsDjK/AZ+TBr6lbxfA1xqCOQDS7um0A8BTa1L+fSBC/0u/lsfJ0mQ55gCE4KyplPaYJ1czVWHWAHidLoG/mfB6AIQgvTGnqXSj+BoAaTusBTegCRbusnKthNUABP157Rv2XHGxVd/XylAD8C+lmtNJDVQ0KH2KeaaSDxuL104hhsrnmIhh5bWMxmWHHMWXABjwODFsdhtAdMWXANSGzaSYMkpCvE3DqgQgar902DiW7ZKl+JEWSgBKCUITttvhO2Coh1r8qKeUAASFpWHTMu+jhKX4UQmnRFgaNp7Ufu9Aqpk+MYxyP9mTyZVnW+0a2vu9RrZSBeWLJ9qr31wTqKaf3+18ce0iRtr1s7WP3ow9TcauJr0CqpkbullMzqpzD4BIZHLBeOpPafF3OqWbCrLZlgBoTt7iuAawZuA/xAh3Ifk/Dm0AAAAASUVORK5CYII="></span>
+                                            <span class="sidebar__nav-item"><img class="icon icons8-Up" width="22px"
+                                                    height="22px"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAxklEQVRYR+3VwQ2DMAyF4Z8NOkI36AodpZ2sjMAoHaWdoJWlIEXI4RHnwMWROAH2ZxuSiZPXdHJ+EjDagUcZ4Rwd5QjAkr9K4icQQkQBdfK1+BAiAvCShxG9gG3b6xGExtED8Gb+K6VbnNA3cRTQCl4DzNKNOALYC7oFdCMUQFXkAboQCvAGbkDrF2sBasQXuAIfb7NSgAtwB5bGTrcHWBFWhF3uUgC1wyqAen/4NExAdiA7kB3IDmQH5GGjHhg9DVV8eT8Bf2HqNiEP+isaAAAAAElFTkSuQmCC"></span>
+                                            <span class="sidebar__nav-item"><img class="icon icons8-Down" width="22px"
+                                                    height="22px"
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA4UlEQVRYR+2WgQnCMBBFXzdwBSdwBUfRyXQER3EUN1AOEgnxLrkkhYCkUFpI7/+Xf1fajcnHNtmfBTCawDu0sFunuzAYL4CVwEpgJbAS+P8EDsAZeBj/DbUELsAznKpE7WMkxSfgCtwVhRKAmN+AF3AM1x+JGkAUkUINwgKo1X1BagDyYElMA3Cbi7gHoASRAzSZtwBYEClAs3krgAYhQxbnI73XBrbrLdCK0p3m69bbYv79e2cgF9Agms17WpCCdPU830lvAlFHIORw93xvALO33oXRBLw+uw/hsHEUmJ7ABzErNiGyzfJcAAAAAElFTkSuQmCC"></span>
+                                        </div>
+                                        <h2 class="sidebar__heading">Wednesday<br>April 6</h2>
+                                        <ul class="sidebar__list">
+                                            <li class="sidebar__list-item sidebar__list-item--complete"><span
+                                                    class="list-item__time">8.30</span> Team Meeting</li>
+                                            <li class="sidebar__list-item sidebar__list-item--complete"><span
+                                                    class="list-item__time">10.00</span> Lunch with Sasha</li>
+                                            <li class="sidebar__list-item"><span class="list-item__time">2.30</span> Design
+                                                Review</li>
+                                            <li class="sidebar__list-item"><span class="list-item__time">4.00</span> Get
+                                                Groceries</li>
+                                        </ul>
+                                    </aside>
+        
+        
+                                    <section class="calendar__days">
+                                        <section class="calendar__top-bar">
+                                            <span class="top-bar__days">Mon</span>
+                                            <span class="top-bar__days">Tue</span>
+                                            <span class="top-bar__days">Wed</span>
+                                            <span class="top-bar__days">Thu</span>
+                                            <span class="top-bar__days">Fri</span>
+                                            <span class="top-bar__days">Sat</span>
+                                            <span class="top-bar__days">Sun</span>
+                                        </section>
+        
+                                        <section class="calendar__week">
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">30</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">31</span>
+                                                <span class="calendar__task">4</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">1</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">2</span>
+                                                <span class="calendar__task">3</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">3</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">4</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">5</span>
+                                                <span class="calendar__task">4</span>
+                                            </div>
+                                        </section>
+        
+                                        <section class="calendar__week">
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">6</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">7</span>
+                                                <span class="calendar__task">3</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">8</span>
+                                                <span class="calendar__task">3</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">9</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">10</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">11</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">12</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                        </section>
+        
+                                        <section class="calendar__week">
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">13</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">14</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day today">
+                                                <span class="calendar__date">15</span>
+                                                <span class="calendar__task calendar__task--today">4 items</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">16</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">17</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">18</span>
+                                                <span class="calendar__task">4</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">19</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                        </section>
+        
+                                        <section class="calendar__week">
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">20</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">21</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">22</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">23</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">24</span>
+                                                <span class="calendar__task">5</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">25</span>
+                                                <span class="calendar__task">3</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">26</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                        </section>
+        
+                                        <section class="calendar__week">
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">27</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day">
+                                                <span class="calendar__date">28</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">1</span>
+                                                <span class="calendar__task">2</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">2</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">3</span>
+                                                <span class="calendar__task">5</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">4</span>
+                                                <span class="calendar__task">3</span>
+                                            </div>
+                                            <div class="calendar__day inactive">
+                                                <span class="calendar__date">5</span>
+                                                <span class="calendar__task">1</span>
+                                            </div>
+                                        </section>
+                                    </section>
+        
+                                </main>
+        
+                    </div>
+                   
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="../vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
